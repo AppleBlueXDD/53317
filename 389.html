@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ชำระเงิน - ภาคิน เดชภูมี</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Kanit', sans-serif;
+      background-color: #e6f4ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 16px;
+      border: 2px solid #a3d5ff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+      color: #222;
+    }
+
+    .order-id {
+      font-size: 0.9rem;
+      color: #0077cc;
+      margin-bottom: 12px;
+    }
+
+    .info {
+      font-size: 0.95rem;
+      color: #666;
+      margin: 4px 0;
+    }
+
+    .amount {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0077cc;
+      margin: 16px 0;
+    }
+
+    .qr-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .qr {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .qr img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .label {
+      font-size: 0.85rem;
+      color: #3399cc;
+      margin-top: 6px;
+    }
+
+    .btn {
+      margin-top: 30px;
+    }
+
+    .btn a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3399ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn a:hover {
+      background-color: #267acc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="ABR Production.png" alt="โลโก้ ABR Production" class="logo">
+    <h1>ชำระเงินให้ ภาคิน เดชภูมี</h1>
+    <div class="order-id">เลขออเดอร์ #53317</div>
+    <div class="info">PromptPay: 0966525042</div>
+    <div class="info">TrueMoney: 0966525042</div>
+    <div class="amount">จำนวนเงิน: 389 บาท</div>
+
+    <div class="qr-row">
+      <div class="qr">
+        <img src="https://promptpay.io/0966525042/389.png" alt="QR PromptPay">
+        <div class="label">PromptPay</div>
+      </div>
+      <div class="qr">
+        <img src="389.jpg" alt="QR TrueMoney">
+        <div class="label">TrueMoney</div>
+      </div>
+    </div>
+
+    <div class="btn">
+      <a href="53317.pdf" target="_blank">พิมพ์ใบเสร็จ</a>
+    </div>
+  </div>
+</body>
+</html>
